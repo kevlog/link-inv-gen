@@ -187,6 +187,17 @@
         const name = document.getElementById("guestName").value.trim();
         const file = document.getElementById("guestFile").files[0];
 
+        // Validasi jika mode file dan file bukan .txt
+        const mode = document.getElementById("inputMode").value;
+        if (mode === "file" && file) {
+          const isTxt = file.name.toLowerCase().endsWith(".txt");
+          if (!isTxt) {
+            output.innerHTML =
+              "<b class='text-red-400'>Hanya file .txt yang diperbolehkan!</b>";
+            return;
+          }
+        }
+
         const sep = separator === "custom" ? "/?" + customSep + "=" : separator;
 
         if (!/^https?:\/\//i.test(base)) {
