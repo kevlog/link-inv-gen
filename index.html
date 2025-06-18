@@ -62,25 +62,40 @@
         placeholder="Isi separator custom, contoh: ?undangan="
       />
 
+      <!-- Opsi Metode Input -->
+      <label class="block mt-4 mb-2 font-medium">Pilih Metode Input</label>
+      <select
+        id="inputMode"
+        onchange="toggleInputMethod()"
+        class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white"
+      >
+        <option value="manual">Manual (1 nama)</option>
+        <option value="file">Upload File (.txt)</option>
+      </select>
+
       <!-- Input manual -->
-      <label class="block mt-4 mb-2 font-medium">Nama Tamu (Manual)</label>
-      <input
-        type="text"
-        id="guestName"
-        placeholder="contoh: kevin"
-        class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"
-      />
+      <div id="manualInput" class="mt-4">
+        <label class="block mb-2 font-medium">Nama Tamu (Manual)</label>
+        <input
+          type="text"
+          id="guestName"
+          placeholder="contoh: kevin"
+          class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"
+        />
+      </div>
 
       <!-- Upload file -->
-      <label class="block mt-4 mb-2 font-medium"
-        >Upload File Daftar Nama (.txt)</label
-      >
-      <input
-        type="file"
-        id="guestFile"
-        accept=".txt"
-        class="w-full text-white bg-opacity-20"
-      />
+      <div id="fileInput" class="mt-4 hidden">
+        <label class="block mb-2 font-medium"
+          >Upload File Daftar Nama (.txt)</label
+        >
+        <input
+          type="file"
+          id="guestFile"
+          accept=".txt"
+          class="w-full text-white bg-opacity-20"
+        />
+      </div>
 
       <!-- Tombol -->
       <button
@@ -138,6 +153,24 @@
         const sep = document.getElementById("separator").value;
         const customInput = document.getElementById("customSeparator");
         customInput.classList.toggle("hidden", sep !== "custom");
+      }
+
+      function toggleInputMethod() {
+        const mode = document.getElementById("inputMode").value;
+        const manual = document.getElementById("manualInput");
+        const file = document.getElementById("fileInput");
+
+        if (mode === "manual") {
+          manual.classList.remove("hidden");
+          file.classList.add("hidden");
+        } else {
+          manual.classList.add("hidden");
+          file.classList.remove("hidden");
+        }
+
+        // Bersihkan input agar tidak tertukar saat ganti mode
+        document.getElementById("guestName").value = "";
+        document.getElementById("guestFile").value = null;
       }
 
       function generateLink() {
