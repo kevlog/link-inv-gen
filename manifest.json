@@ -1,6 +1,7 @@
 {
-  "name": "Generator Undangan Digital",
-  "short_name": "Undangan",
+  "name": "GLUD: Generator Link Undangan Digital",
+  "short_name": "GLUD App",
+  "description": "Alat pembuat link undangan digital cepat & personal by hikvn.my.id",
   "start_url": "/link-inv-gen/",
   "display": "standalone",
   "background_color": "#0f172a",
