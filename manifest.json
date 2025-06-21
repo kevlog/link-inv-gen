@@ -1,0 +1,16 @@
+{
+  "name": "Generator Undangan Digital",
+  "short_name": "Undangan",
+  "start_url": "/link-inv-gen/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/link-inv-gen/src/assets/favicon/images/128px.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
