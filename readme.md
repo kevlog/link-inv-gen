@@ -44,13 +44,9 @@ Sebuah tools sederhana berbasis web untuk membantu membuat link undangan digital
 
 Berikut adalah karya pihak ketiga yang digunakan dalam proyek ini sebagai bagian dari tampilan dan metadata:
 
-**Banner Open Graph:**
+**Banner Open Graph:** [Open Graph Banner by iStock](https://www.istockphoto.com/id/foto/pernikahan-nasional-pengantin-pernikahan-pasangan-muslim-selama-upacara-pernikahan-gm1298757652-391565184?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbannerNone_media&utm_term=nikah+muslim)
 
-[![Open Graph Banner](https://hikvn.my.id/src/assets/favicon/images/istockphoto-1298757652-1024x1024.jpg)](https://www.istockphoto.com/id/foto/pernikahan-nasional-pengantin-pernikahan-pasangan-muslim-selama-upacara-pernikahan-gm1298757652-391565184?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_topbannerNone_media&utm_term=nikah+muslim)
-
-**Icon:**
-
-[Wedding Day Icon (Icon-icons.com)](https://icon-icons.com/icon/wedding-day/42243)
+**Icon:** [Wedding Day Icon (Icon-icons.com)](https://icon-icons.com/icon/wedding-day/42243)
 
 Semua hak cipta tetap milik pemilik aslinya.
 
