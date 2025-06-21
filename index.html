@@ -1,119 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
+    <!-- Charset and Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undangan Generator</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <style>
-      #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-      }
-    </style>
-  </head>
-  <body
-    class="bg-gray-900 text-white min-h-screen flex items-center justify-center relative"
-  >
-    <div id="particles-js"></div>
 
-    <div
-      class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl shadow-xl p-8 w-full max-w-xl"
-      data-aos="fade-up"
-    >
-      <h2 class="text-2xl font-bold mb-6 text-center text-white">
-        🎉 Generator Link Undangan
+    <!-- Web Title -->
+    <title>Generator Link Undangan</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Kevin">
+    <meta name="description" content="Buat link undangan digital personal secara otomatis dan cepat. Bisa input manual atau upload file daftar nama tamu.">
+    <meta name="keywords" content="undangan digital, generator link, undangan online, nama tamu, link tamu, wedding invitation, pernikahan, invitation, wedding, undangan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hikvn.my.id/link-inv-gen"/>
+
+    <!-- Privacy/Security Meta -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Open Graph for Social Media such as Facebook, WhatsApp, or LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Generator Link Undangan">
+    <meta property="og:description" content="Buat link undangan digital personal secara otomatis dan cepat. Bisa input manual atau upload file daftar nama tamu.">
+    <meta property="og:image" content="https://hikvn.my.id/src/assets/favicon/images/istockphoto-1298757652-1024x1024.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="682">
+    <meta property="og:url" content="https://hikvn.my.id/link-inv-gen">
+    <meta property="og:site_name" content="Generator Link Undangan Digital by hikvn.my.id">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Generator Link Undangan">
+    <meta name="twitter:description" content="Buat link undangan digital personal secara otomatis dan cepat. Bisa input manual atau upload file daftar nama tamu.">
+    <meta name="twitter:image" content="https://hikvn.my.id/src/assets/favicon/images/istockphoto-1298757652-1024x1024.jpg">
+    <meta name="twitter:image:alt" content="Ilustrasi undangan pernikahan - tangan pasangan sedang bertukar cincin.">
+
+    <!-- Web App Appearance (Android/iOS) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Generator Undangan Digital">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Favicon & Apple Icons -->
+    <link rel="icon" href="/src/assets/favicon/Weddingday3x_42243.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="/src/assets/favicon/ico/Weddingday3x_42243.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="/src/assets/favicon/images/128px.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/favicon/images/96px.png">
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD: WebApplication Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Generator Link Undangan Digital",
+        "url": "https://hikvn.my.id/link-inv-gen",
+        "description": "Halaman pembuat link undangan digital otomatis.",
+        "mainEntity": {
+          "@type": "WebApplication",
+          "name": "Generator Link Undangan Digital",
+          "url": "https://hikvn.my.id/link-inv-gen",
+          "applicationCategory": "ProductivityApplication",
+          "description": "Alat untuk membuat link undangan digital secara otomatis dan personal.",
+          "operatingSystem": "All",
+          "creator": {
+            "@type": "Person",
+            "name": "Kevin"
+          },
+          "inLanguage": "id",
+          "image": "https://hikvn.my.id/src/assets/favicon/images/istockphoto-1298757652-1024x1024.jpg",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex items-center justify-center relative">
+    <div id="particles-js"></div>
+    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl shadow-xl p-8 w-full max-w-xl" data-aos="fade-up">
+      <h2 class="text-2xl font-bold mb-6 text-center text-white flex items-center justify-center gap-2">
+        <span class="ikon-undangan"></span>
+        Generator Link Undangan
       </h2>
 
-      <!-- Basic URL -->
-      <label class="block mb-2 font-medium">Basic URL</label>
-      <input
-        type="text"
-        id="basicUrl"
-        placeholder="contoh: hikvn.my.id/inv/kebun"
-        class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"
-      />
+      <!-- Basis URL -->
+      <label class="block mb-2 font-medium">Link Undangan</label>
+      <input type="text" id="basicUrl" placeholder="contoh: hikvn.my.id/inv/kebun" class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"/>
 
-      <!-- Separator -->
-      <label class="block mt-4 mb-2 font-medium">Separator</label>
-      <select
-        id="separator"
-        onchange="handleSeparatorChange()"
-        class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white"
-      >
-        <option value="?to=">?to=</option>
-        <option value="?ke=">?ke=</option>
-        <option value="?guest=">?guest=</option>
-        <option value="?nama=">?nama=</option>
-        <option value="custom">🔧 Lainnya / Custom...</option>
+      <!-- Parameter -->
+      <label class="block mt-4 mb-2 font-medium">Parameter</label>
+      <select id="separator" onchange="handleSeparatorChange()" class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white">
+        <option class="text-black" value="/?to=">?to=</option>
+        <option class="text-black" value="/?ke=">?ke=</option>
+        <option class="text-black" value="/?guest=">?guest=</option>
+        <option class="text-black" value="/?nama=">?nama=</option>
+        <option class="text-black" value="custom">🔧 Lainnya / Custom...</option>
       </select>
-      <input
-        type="text"
-        id="customSeparator"
-        class="hidden mt-2 w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"
-        placeholder="Isi separator custom, contoh: ?undangan="
-      />
+      <input type="text" id="customSeparator" class="hidden mt-2 w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300" placeholder="Isi parameter custom, contoh: ?undangan="/>
 
       <!-- Opsi Metode Input -->
       <label class="block mt-4 mb-2 font-medium">Pilih Metode Input</label>
-      <select
-        id="inputMode"
-        onchange="toggleInputMethod()"
-        class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white"
-      >
-        <option value="manual">Manual (1 nama)</option>
-        <option value="file">Upload File (.txt)</option>
+      <select id="inputMode" onchange="toggleInputMethod()" class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white">
+        <option class="text-black" value="manual">Manual (1 nama)</option>
+        <option class="text-black" value="file">Upload File (.txt)</option>
       </select>
 
       <!-- Input manual -->
       <div id="manualInput" class="mt-4">
         <label class="block mb-2 font-medium">Nama Tamu (Manual)</label>
-        <input
-          type="text"
-          id="guestName"
-          placeholder="contoh: kevin"
-          class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"
-        />
+        <input type="text" id="guestName" placeholder="contoh: kevin" class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-gray-300"/>
       </div>
 
       <!-- Upload file -->
       <div id="fileInput" class="mt-4 hidden">
-        <label class="block mb-2 font-medium"
-          >Upload File Daftar Nama (.txt)</label
-        >
-        <input
-          type="file"
-          id="guestFile"
-          accept=".txt"
-          class="w-full text-white bg-opacity-20"
-        />
+        <label class="block mb-2 font-medium">Upload File Daftar Nama (.txt)</label>
+        <input type="file" id="guestFile" accept=".txt" class="w-full px-4 py-2 text-white bg-opacity-20 rounded-lg bg-white/10 text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 transition duration-200"/>
       </div>
 
       <!-- Tombol -->
-      <button
-        onclick="generateLink()"
-        class="mt-6 w-full py-2 px-4 bg-pink-500 hover:bg-pink-600 rounded font-semibold transition duration-200"
-      >
+      <button onclick="generateLink()" class="mt-6 w-full py-2 px-4 bg-pink-500 hover:bg-pink-600 rounded font-semibold transition duration-200">
         Generate Link
       </button>
 
       <!-- Output -->
       <div class="mt-6 text-sm break-words text-white" id="output"></div>
       <div class="flex justify-center">
-        <a
-          id="downloadLink"
-          href="#"
-          download="undangan.txt"
-          class="hidden mt-4 w-full max-w-xs inline-block py-2 px-4 bg-green-500 hover:bg-green-600 rounded text-center"
-        >
+        <a id="downloadLink" href="#" download="undangan.txt" class="hidden mt-4 w-full max-w-xs inline-block py-2 px-4 bg-green-500 hover:bg-green-600 rounded text-center">
           ⬇️ Download Link (.txt)
         </a>
       </div>
@@ -122,143 +157,8 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      AOS.init();
-
-      particlesJS("particles-js", {
-        particles: {
-          number: { value: 60, density: { enable: true, value_area: 800 } },
-          color: { value: "#ffffff" },
-          shape: { type: "circle" },
-          opacity: { value: 0.5 },
-          size: { value: 3 },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: { enable: true, speed: 2 },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: { onhover: { enable: true, mode: "repulse" } },
-          modes: { repulse: { distance: 100 } },
-        },
-        retina_detect: true,
-      });
-
-      function handleSeparatorChange() {
-        const sep = document.getElementById("separator").value;
-        const customInput = document.getElementById("customSeparator");
-        customInput.classList.toggle("hidden", sep !== "custom");
-      }
-
-      function toggleInputMethod() {
-        const mode = document.getElementById("inputMode").value;
-        const manual = document.getElementById("manualInput");
-        const file = document.getElementById("fileInput");
-
-        if (mode === "manual") {
-          manual.classList.remove("hidden");
-          file.classList.add("hidden");
-        } else {
-          manual.classList.add("hidden");
-          file.classList.remove("hidden");
-        }
-
-        // Bersihkan input agar tidak tertukar saat ganti mode
-        document.getElementById("guestName").value = "";
-        document.getElementById("guestFile").value = null;
-      }
-
-      function generateLink() {
-        const output = document.getElementById("output");
-        const downloadLink = document.getElementById("downloadLink");
-        output.innerHTML = "";
-        downloadLink.classList.add("hidden");
-
-        let base = document.getElementById("basicUrl").value.trim();
-        const separator = document.getElementById("separator").value;
-        const customSep = document
-          .getElementById("customSeparator")
-          .value.trim();
-        const name = document.getElementById("guestName").value.trim();
-        const file = document.getElementById("guestFile").files[0];
-
-        // Validasi jika mode file dan file bukan .txt
-        const mode = document.getElementById("inputMode").value;
-        if (mode === "file" && file) {
-          const isTxt = file.name.toLowerCase().endsWith(".txt");
-          if (!isTxt) {
-            output.innerHTML =
-              "<b class='text-red-400'>Hanya file .txt yang diperbolehkan!</b>";
-            return;
-          }
-        }
-
-        const sep = separator === "custom" ? "/?" + customSep + "=" : separator;
-
-        if (!/^https?:\/\//i.test(base)) {
-          base = "https://" + base;
-        }
-
-        if (!sep || !base) {
-          output.innerHTML =
-            "<b class='text-red-400'>Mohon isi Basic URL & Separator.</b>";
-          return;
-        }
-
-        // Jika pakai file upload
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            const lines = e.target.result
-              .split(/\r?\n/)
-              .filter((l) => l.trim() !== "");
-            const links = lines.map(
-              (n) => `${base}${sep}${encodeURIComponent(n.trim())}`
-            );
-            output.innerHTML = `
-            <p class="mb-2 font-semibold text-pink-300">Total ${
-              links.length
-            } link berhasil dibuat:</p>
-            <ul class="list-disc pl-6">${links
-              .slice(0, 5)
-              .map(
-                (l) =>
-                  `<li><a href="${l}" target="_blank" class="underline text-blue-300">${l}</a></li>`
-              )
-              .join("")}</ul>
-            ${
-              links.length > 5
-                ? '<p class="text-sm text-gray-400 mt-2">...dan lainnya.</p>'
-                : ""
-            }
-          `;
-
-            // Buat file download
-            const blob = new Blob([links.join("\n")], { type: "text/plain" });
-            const url = URL.createObjectURL(blob);
-            downloadLink.href = url;
-            downloadLink.classList.remove("hidden");
-          };
-          reader.readAsText(file);
-        }
-
-        // Jika pakai input nama manual
-        else if (name) {
-          const finalUrl = `${base}${sep}${encodeURIComponent(name)}`;
-          output.innerHTML = `
-          <p class="mb-1 font-medium text-pink-300">Link Undangan:</p>
-          <a href="${finalUrl}" target="_blank" class="underline text-blue-300">${finalUrl}</a>
-        `;
-        } else {
-          output.innerHTML =
-            "<b class='text-red-400'>Masukkan nama tamu atau unggah file .txt</b>";
-        }
-      }
-    </script>
+    <script src="/src/js/aos.js"></script>
+    <script src="/src/js/particle.js"></script>
+    <script src="/src/js/script.js"></script>
   </body>
 </html>
